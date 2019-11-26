@@ -1,0 +1,38 @@
+14:32:09 (16976) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text"]
+14:32:09 (16976) INFO InputFileResolver Found 1 of 7 file(s) to be mutated.
+14:32:09 (16976) DEBUG InputFileResolver All input files: [
+  "C:\\Users\\jelleb\\Desktop\\testProject\\.gitignore",
+  "C:\\Users\\jelleb\\Desktop\\testProject\\package-lock.json",
+  "C:\\Users\\jelleb\\Desktop\\testProject\\package.json",
+  "C:\\Users\\jelleb\\Desktop\\testProject\\src\\math.js",
+  "C:\\Users\\jelleb\\Desktop\\testProject\\stryker.conf.js",
+  "C:\\Users\\jelleb\\Desktop\\testProject\\stryker.log",
+  "C:\\Users\\jelleb\\Desktop\\testProject\\test\\math.spec.js"
+]
+14:32:09 (16976) DEBUG InputFileResolver Files to mutate: [
+  "C:\\Users\\jelleb\\Desktop\\testProject\\src\\math.js"
+]
+14:32:09 (16976) DEBUG TemporaryDirectory Using temp directory "C:\Users\jelleb\Desktop\testProject\.stryker-tmp"
+14:32:09 (16976) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+14:32:09 (16976) INFO InitialTestExecutor Starting initial test run. This may take a while.
+14:32:09 (16976) DEBUG Sandbox Creating a sandbox for files in C:\Users\jelleb\Desktop\testProject\.stryker-tmp\sandbox934508
+14:32:09 (16976) DEBUG Sandbox Creating test runner 0
+14:32:09 (16976) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+14:32:11 (16976) INFO InitialTestExecutor Initial test run succeeded. Ran 1 tests in 1 second (net 1336 ms, overhead 1 ms).
+14:32:11 (16976) DEBUG BabelParser Using options {"plugins":["asyncGenerators","bigInt","classProperties","dynamicImport","flow","jsx","objectRestSpread",["decorators",{"decoratorsBeforeExport":true}]],"sourceType":"unambiguous"}
+14:32:11 (16976) INFO MutatorFacade 1 Mutant(s) generated
+14:32:11 (16976) INFO SandboxPool Creating 12 test runners (based on CPU count)
+14:32:11 (16976) DEBUG Sandbox Creating a sandbox for files in C:\Users\jelleb\Desktop\testProject\.stryker-tmp\sandbox732243
+14:32:11 (16976) DEBUG Sandbox Creating a sandbox for files in C:\Users\jelleb\Desktop\testProject\.stryker-tmp\sandbox8616611
+14:32:11 (16976) DEBUG Sandbox Creating test runner 0
+14:32:11 (16976) DEBUG Sandbox Creating test runner 1
+14:32:11 (16976) DEBUG TimeoutDecorator Starting timeout timer (7005 ms) for a test run
+14:32:12 (16976) DEBUG ClearTextReporter [1m[32mMutant killed![39m[22m
+14:32:12 (16976) DEBUG ClearTextReporter 0. [Killed] BinaryExpression
+14:32:12 (16976) DEBUG ClearTextReporter [36mC:\Users\jelleb\Desktop\testProject\src\math.js[39m:[33m0[39m:[33m24[39m
+14:32:12 (16976) DEBUG ClearTextReporter [31m-   exports.add = (a, b) => a + b;[39m
+14:32:12 (16976) DEBUG ClearTextReporter [32m+   exports.add = (a, b) => a - b;[39m
+14:32:12 (16976) DEBUG ClearTextReporter 
+14:32:12 (16976) DEBUG ClearTextReporter Ran all tests for this mutant.
+14:32:12 (16976) DEBUG ScoreResultCalculator No breaking threshold configured. Won't fail the build no matter how low your mutation score is. Set `thresholds.break` to change this behavior.
+14:32:12 (16976) INFO Stryker sending statistics
